@@ -1,0 +1,51 @@
+.btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: gray;
+    outline: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    &:hover {   
+        text-decoration: none;
+    }
+
+}
+.btn-bars {
+    background-color: transparent;
+    border: 1px solid #4447f1;
+    color: black;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    &:hover {
+        background-color: #4447f1;
+        border: 1px solid purple;
+        color: white;    
+    }
+}
+.btn-theme {
+    background-color: #6366F1;
+    border: 1px solid purple;
+    color: white;
+    &:hover {
+        background-color: #4447f1;
+        border: 1px solid purple;
+        color: white;    
+    }
+}
+.btn-gray {
+    background-color: rgb(170, 170, 170);
+    border: 1px solid purple;
+    color: black;
+    &:hover {
+        background-color: #4447f1;
+        border: 1px solid purple;
+        color: white;    
+    }
+
+}

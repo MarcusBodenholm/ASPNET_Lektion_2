@@ -1,0 +1,65 @@
+header {
+    padding: 1rem 0;
+    .container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "logo bars";
+        align-items: center;
+        @include md {
+            grid-template-columns: 1fr auto auto;
+            grid-template-areas: "logo sw bars";
+    
+        }
+        @include lg {
+            grid-template-columns: auto 1fr auto auto;
+            grid-template-areas: "logo nav sw buttons";
+    
+        }
+
+        .logo {
+            grid-area: logo;
+        }
+        nav {
+            display: none;
+            grid-area: nav;
+            a {
+                text-decoration: none;
+                color: gray;
+                font-weight: 700;
+                &.active,
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            @include lg {
+                display: flex;
+                gap: 1rem;        
+            }
+    
+        }
+        #theme-mode {
+            display: none;
+            grid-area: sw;
+            @include md {
+                display: block;
+            }
+        }
+        .account-buttons {
+            display: none;
+            grid-area: buttons;
+            @include lg {
+                display: flex;
+                gap: 1rem;
+            }
+    
+        }
+        .btn-bars {
+            grid-area: bars;
+            @include lg {
+                display: none;        
+            }
+    
+        }
+    }
+}
